@@ -36,7 +36,11 @@
 #define BSWAP16(v) (v << 8) & 0xFF00 | (v >> 8) & 0xFF
 
 // fixme: remove hardcodings
-#define MS5803_I2C_ADDRESS 0x77
+// ADDRESS_HIGH (default for sparkfun board)
+#define MS5803_I2C_ADDRESS 0x76
+// ADDRESS_LOW
+// #define MS5803_I2C_ADDRESS 0x77
+
 #define MS5803_DEV "/dev/i2c-1"
 
 /* i2c file descriptor */
